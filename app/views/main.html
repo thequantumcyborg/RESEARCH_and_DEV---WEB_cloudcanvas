@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Cloud Canvas</title>
+    <title>Signin Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
    <link href="@{'/public/stylesheets/bootstrap.css'}" rel="stylesheet">
@@ -30,10 +30,10 @@
 
     <div class="container">
 
-      <form class="form-signin" role="form">
+      <form action="/signin" method="GET" class="form-signin" role="form">
           <h2 class="form-signin-heading"></br></h2>
-        <input type="text" class="form-control" placeholder="Username" required autofocus>
-        <input type="password" class="form-control" placeholder="Password" required>
+        <input type="text" class="form-control" placeholder="Username" required autofocus name ="username" value="${username}">
+        <input type="password" class="form-control" placeholder="Password" required name ="password" value="${password}">
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>
@@ -41,7 +41,7 @@
       </form>
 
     </div> <!-- /container -->
-
+      
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

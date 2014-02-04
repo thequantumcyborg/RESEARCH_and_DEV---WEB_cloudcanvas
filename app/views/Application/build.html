@@ -5,22 +5,35 @@
 <title>Cloud Canvas</title>
  
 <link href="@{'/public/stylesheets/cloud.css'}" rel="stylesheet">
+ 
 <link rel="image_src" href="amazing.png">
+    
   </head>
+  
 <body background="@{'/public/images/build.png'}" width="590" height="350">  
-<div id="vis"></div>
+    
+<form action="/" method="GET" class="navbar-form navbar-right" role="form"> 
+		 <button type="submit" class="btn btn-success">Sign out</button> 
+		   </form>
+      
+<div id="vis">
+    
+</div>
 
+ 
 <form id="form">
 
   <p style="position: absolute; right: 0; top: 0" id="status"></p>
-
+ 
   <div style="text-align: center">
+       
     <div id="presets"></div>
     <div id="custom-area">
       <p><label for="text">Paste some text below...</label>
       <p><textarea id="text"></textarea>
 	  
-      <button id="go" type="submit">Go!</button>
+      <button id="go" type="submit">Shuffle!</button>
+      
 	  <path class="angle" d="M-4.935708407908468,-40.19811914147355A40.5,40.5 0 0,1 35.074028853269766,-20.25L0,0Z" style="fill: #ffcc00;"></path>
     </div>
   </div>
@@ -58,11 +71,14 @@
 
 
 </form>
+
+<script src="@{'/public/javascripts/bootstrap.min.js'}"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="@{'/public/javascripts/d3.min.js'}"></script>
 <script src="@{'/public/javascripts/d3.layout.cloud.js'}"></script>
 <script src="@{'/public/javascripts/cloud_js.js'}"></script>
+<script src="@{'/public/javascripts/spin.js'}"></script>
 
 </body>
 </html>

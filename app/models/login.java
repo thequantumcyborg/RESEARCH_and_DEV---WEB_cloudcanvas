@@ -79,9 +79,9 @@ public class login {
                 try{
                      
                   
-                  String url = "jdbc:mysql://us-cdbr-east-04.cleardb.com:3306/heroku_c36d590dae49126?reconnect=true";
-                  String user= "b6cf1f485e63de";
-                  String pwd="b2147dbe";
+                  String url = "jdbc:mysql:/...";
+                  String user= "...";
+                  String pwd="...";
 
                     Class.forName("com.mysql.jdbc.Driver");
                     conn = DriverManager.getConnection(url,user,pwd);
